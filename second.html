@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 2</title>
+    <style>
+        /* first question */
+        .static{
+            background-color: blue;
+            color: white;
+        }
+        .relative{
+            background-color: aqua;
+            top: 20px;
+            left: 20px;
+            position: relative;
+            color: white;
+        }
+        .absolute-container{
+            position: relative;
+            height: 200px;
+            background-color: green;
+            color: white;
+        }
+        .absolute-div{
+            position:absolute;
+            top:50px;
+            left:50px;
+            background-color: cadetblue;
+            color: white;}
+
+            /* second question */
+            header{
+                position:fixed;
+                background-color:chocolate;
+                color: white;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 10px;
+                font-size: 20px;
+                text-decoration: solid;
+               
+            }
+            body{
+                margin-top: 60px;
+            }
+
+            /* third question */
+            .grid-container{
+                display:grid;
+                grid-template-columns:repeat(3, 1fr);
+                grid-template-rows:repeat(2, 1fr);
+                gap: 10px; 
+            }
+            .grid-item{
+                background-color: lightblue;
+                border:2px solid black;
+                text-align: center;
+                padding: 20px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            /* fourth questionn */
+            .card{
+                width: 300px;
+                padding: 10px;
+                text-align: center;
+                border: 1px solid black;
+                padding: 10px;
+                transition: transform 0.2s ease-in-out;
+            }
+            .card:hover{
+                transform: scale(1.05);
+            }
+            .card img{
+                width: 100%;
+            }
+            .card-title{
+                font-weight: bold;
+                margin: 10px;
+            }
+            .card p{
+                margin-top: 5px;
+                font-size: 14px;
+                color: #555;
+            }
+
+            /* sixth question */
+            .grid-container{
+                display: grid;
+                grid-template-columns:repeat(3,1fr);
+                gap:15px;
+                padding: 20px;
+            }
+            .card{
+                border:1px solid black;
+                padding: 10px;
+                text-decoration-line: center;
+            }
+
+            /* seventh question */
+            footer{
+                position: fixed;
+                bottom:0px;
+                width: 100%;
+                background-color:yellow;
+                color: black;
+                text-align: center;
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            
+    </style>
+</head>
+<body>
+
+    <!-- first question -->
+    <div class="static">static div</div>
+    <div class="relative">relative div</div>
+    <div class="absolute-container">
+        parent container
+        <div class="absolute-div">absolute div</div>
+    </div><br><br>
+
+    <!-- second question -->
+     <header>FIXED HEADER-LOGO & NAVIGATION</header><br>
+     <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est facere magni nesciunt aut pariatur earum ipsum, dolor quod laboriosam expedita reprehenderit ab, sapiente eveniet rem, ratione saepe? Voluptate, a vero!
+     </div><br><br>
+
+     <!-- third question -->
+      <div class="grid-container">
+        <div class="grid-item">box1</div>
+        <div class="grid-item">box2</div>
+        <div class="grid-item">box3</div>
+        <div class="grid-item">box4</div>
+        <div class="grid-item">box5</div>
+        <div class="grid-item">box6</div>
+      </div><br>
+
+      <!-- fourth question -->
+       <div class="card">
+        <img src="https://cdn.pixabay.com/photo/2024/02/19/08/49/hibiscus-8582876_1280.jpg"alt="thumbnail">
+        <div class="card-title">amazing flower</div>
+        <p>informatioin about hibiscus</p>
+        </div><br>
+
+       <!-- sixth question -->
+        <div class="grid-container">
+            <div class="card">card 1</div>
+            <div class="card">card 2</div>
+            <div class="card">card 3</div>
+            <div class="card">card 4</div>
+            <div class="card">card 5</div>
+            <div class="card">card 6</div>
+            <div class="card">card 7</div>
+            <div class="card">card 8</div>
+            <div class="card">card 9</div>
+        </div>
+
+        <!-- seventh question -->
+         <footer>copyright @2024</footer>
+
+         <!-- ninth question -->
+          
+</body>
+</html>
